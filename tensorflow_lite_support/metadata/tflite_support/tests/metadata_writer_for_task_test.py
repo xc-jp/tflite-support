@@ -17,8 +17,8 @@
 import os
 import sys
 import tensorflow as tf
-from tensorflow_lite_support.metadata.python import metadata_writer_for_task as mt
-from tensorflow_lite_support.metadata.python.tests.metadata_writers import test_utils
+from tensorflow_lite_support.metadata.tflite_support import metadata_writer_for_task as mt
+from tensorflow_lite_support.metadata.tflite_support.tests.metadata_writers import test_utils
 
 _AUDIO_CLASSIFICATION_MODEL = '../testdata/audio_classifier/yamnet_wavin_quantized_mel_relu6.tflite'
 _AUDIO_EMBEDDING_MODEL = '../testdata/audio_embedder/yamnet_embedding.tflite'

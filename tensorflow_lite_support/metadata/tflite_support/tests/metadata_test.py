@@ -24,7 +24,7 @@ import tensorflow as tf
 
 from tensorflow_lite_support.metadata import metadata_schema_py_generated as _metadata_fb
 from tensorflow_lite_support.metadata import schema_py_generated as _schema_fb
-from tensorflow_lite_support.metadata.python import metadata as _metadata
+from tensorflow_lite_support.metadata.tflite_support import metadata as _metadata
 
 
 class Tokenizer(enum.Enum):

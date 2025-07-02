@@ -16,9 +16,9 @@
 
 from typing import List, Optional
 
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_info
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_writer
-from tensorflow_lite_support.metadata.python.metadata_writers import writer_utils
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import metadata_info
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import metadata_writer
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import writer_utils
 
 _MODEL_NAME = "AudioClassifier"
 _MODEL_DESCRIPTION = (

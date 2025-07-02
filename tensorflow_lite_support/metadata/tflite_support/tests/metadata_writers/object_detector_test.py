@@ -22,10 +22,10 @@ from absl.testing import parameterized
 import tensorflow as tf
 
 from tensorflow_lite_support.metadata import metadata_schema_py_generated as _metadata_fb
-from tensorflow_lite_support.metadata.python import metadata
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_info
-from tensorflow_lite_support.metadata.python.metadata_writers import object_detector
-from tensorflow_lite_support.metadata.python.tests.metadata_writers import test_utils
+from tensorflow_lite_support.metadata.tflite_support import metadata
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import metadata_info
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import object_detector
+from tensorflow_lite_support.metadata.tflite_support.tests.metadata_writers import test_utils
 
 _PATH = "../testdata/object_detector/"
 _MODEL = "../testdata/object_detector/ssd_mobilenet_v1.tflite"

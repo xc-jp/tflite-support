@@ -18,9 +18,9 @@ import array
 import tensorflow as tf
 
 from tensorflow_lite_support.metadata import schema_py_generated as _schema_fb
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_info
-from tensorflow_lite_support.metadata.python.metadata_writers import writer_utils
-from tensorflow_lite_support.metadata.python.tests.metadata_writers import test_utils
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import metadata_info
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import writer_utils
+from tensorflow_lite_support.metadata.tflite_support.tests.metadata_writers import test_utils
 
 _FLOAT_TYPE = _schema_fb.TensorType.FLOAT32
 _UINT8_TYPE = _schema_fb.TensorType.UINT8

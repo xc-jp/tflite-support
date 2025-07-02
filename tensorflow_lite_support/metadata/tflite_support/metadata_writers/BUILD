@@ -18,7 +18,7 @@ py_library(
         ":writer_utils",
         "//tensorflow_lite_support/metadata:metadata_schema_py",
         "//tensorflow_lite_support/metadata:schema_py",
-        "//tensorflow_lite_support/metadata/python:metadata",
+        "//tensorflow_lite_support/metadata/tflite_support:metadata",
         "@flatbuffers//:runtime_py",
     ],
 )
@@ -74,7 +74,7 @@ py_library(
         ":writer_utils",
         "//tensorflow_lite_support/metadata:metadata_schema_py",
         "//tensorflow_lite_support/metadata:schema_py",
-        "//tensorflow_lite_support/metadata/python:metadata",
+        "//tensorflow_lite_support/metadata/tflite_support:metadata",
         "@flatbuffers//:runtime_py",
     ],
 )

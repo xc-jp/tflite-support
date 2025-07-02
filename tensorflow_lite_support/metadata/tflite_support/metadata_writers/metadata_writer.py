@@ -18,11 +18,11 @@ import collections
 from typing import List, Optional, Type
 
 import flatbuffers
-from tensorflow_lite_support.metadata import metadata_schema_py_generated as _metadata_fb
-from tensorflow_lite_support.metadata import schema_py_generated as _schema_fb
-from tensorflow_lite_support.metadata.python import metadata as _metadata
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_info
-from tensorflow_lite_support.metadata.python.metadata_writers import writer_utils
+from tflite_support import metadata_schema_py_generated as _metadata_fb
+from tflite_support import schema_py_generated as _schema_fb
+from tflite_support import metadata as _metadata
+from tflite_support.metadata_writers import metadata_info
+from tflite_support.metadata_writers import writer_utils
 
 
 class MetadataWriter:

@@ -16,8 +16,8 @@
 
 import tensorflow as tf
 
-from tensorflow_lite_support.metadata.python.metadata_writers import image_segmenter
-from tensorflow_lite_support.metadata.python.tests.metadata_writers import test_utils
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import image_segmenter
+from tensorflow_lite_support.metadata.tflite_support.tests.metadata_writers import test_utils
 
 _MODEL = "../testdata/image_segmenter/deeplabv3.tflite"
 _LABEL_FILE = "../testdata/image_segmenter/labelmap.txt"

@@ -19,11 +19,11 @@ import os
 import tempfile
 from typing import Optional, List
 
-from tensorflow_lite_support.metadata import metadata_schema_py_generated as _metadata_fb
-from tensorflow_lite_support.metadata.python import metadata as _metadata
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_info
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_writer
-from tensorflow_lite_support.metadata.python.metadata_writers import writer_utils
+from tflite_support import metadata_schema_py_generated as _metadata_fb
+from tflite_support import metadata as _metadata
+from tflite_support.metadata_writers import metadata_info
+from tflite_support.metadata_writers import metadata_writer
+from tflite_support.metadata_writers import writer_utils
 
 CalibrationParameter = collections.namedtuple(
     'CalibrationParameter', ['scale', 'slope', 'offset', 'min_score'])

@@ -25,10 +25,19 @@ import warnings
 import zipfile
 
 import flatbuffers
-from tensorflow_lite_support.metadata import metadata_schema_py_generated as _metadata_fb
-from tensorflow_lite_support.metadata import schema_py_generated as _schema_fb
-from tensorflow_lite_support.metadata.cc.python import _pywrap_metadata_version
-from tensorflow_lite_support.metadata.flatbuffers_lib import _pywrap_flatbuffers
+from tflite_support import metadata_schema_py_generated as _metadata_fb
+from tflite_support import schema_py_generated as _schema_fb
+try:
+    from tensorflow_lite_support.metadata.cc.python import _pywrap_metadata_version
+except ImportError:
+    class _pywrap_metadata_version:
+        @staticmethod
+        def MetadataVersion():
+            return "0.0.0"
+
+        @staticmethod
+        def GetMinimumMetadataParserVersion(_):
+            return "0.0.0"
 
 try:
   # If exists, optionally use TensorFlow to open and check files. Used to

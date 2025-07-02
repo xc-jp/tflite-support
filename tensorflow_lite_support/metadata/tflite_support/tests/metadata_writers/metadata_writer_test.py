@@ -18,10 +18,10 @@ import os
 import tensorflow as tf
 
 from tensorflow_lite_support.metadata import metadata_schema_py_generated as _metadata_fb
-from tensorflow_lite_support.metadata.python import metadata as _metadata
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_info
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_writer
-from tensorflow_lite_support.metadata.python.tests.metadata_writers import test_utils
+from tensorflow_lite_support.metadata.tflite_support import metadata as _metadata
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import metadata_info
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import metadata_writer
+from tensorflow_lite_support.metadata.tflite_support.tests.metadata_writers import test_utils
 
 _MODEL = "../testdata/mobilenet_v2_1.0_224_quant.tflite"
 _MULTI_INPUTS_MODEL = "../testdata/question_answerer/mobilebert_float.tflite"

@@ -19,9 +19,9 @@ import csv
 import os
 from typing import List, Optional, Type, Union
 
-from tensorflow_lite_support.metadata import metadata_schema_py_generated as _metadata_fb
-from tensorflow_lite_support.metadata import schema_py_generated as _schema_fb
-from tensorflow_lite_support.metadata.python.metadata_writers import writer_utils
+from tflite_support import metadata_schema_py_generated as _metadata_fb
+from tflite_support import schema_py_generated as _schema_fb
+from tflite_support.metadata_writers import writer_utils
 
 # Min and max values for UINT8 tensors.
 _MIN_UINT8 = 0

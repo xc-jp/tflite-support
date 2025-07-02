@@ -18,8 +18,8 @@ import array
 import functools
 from typing import List, Union, Optional
 
-from tensorflow_lite_support.metadata import metadata_schema_py_generated as _metadata_fb
-from tensorflow_lite_support.metadata import schema_py_generated as _schema_fb
+from tflite_support import metadata_schema_py_generated as _metadata_fb
+from tflite_support import schema_py_generated as _schema_fb
 
 
 def compute_flat_size(tensor_shape: Optional["array.array[int]"]) -> int:

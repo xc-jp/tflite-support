@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "tflite-support-lite"
+name = "tflite-support"
 version = "0.0.0.dev0"
 description = ""
 authors = ["Duvan Marrugo <duvan.andres@cross-compass.com>"]
 readme = "README.md"
-packages = [{ include = "tflite_support", from = "tensorflow_lite_support/metadata/python" }]
+packages = [{ include = "tflite_support", from = "tensorflow_lite_support/metadata" }]
 
 
 [tool.poetry.dependencies]

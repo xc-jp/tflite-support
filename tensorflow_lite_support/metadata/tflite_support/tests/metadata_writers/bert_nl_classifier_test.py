@@ -16,10 +16,10 @@
 
 import tensorflow as tf
 
-from tensorflow_lite_support.metadata.python import metadata as _metadata
-from tensorflow_lite_support.metadata.python.metadata_writers import bert_nl_classifier
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_info
-from tensorflow_lite_support.metadata.python.tests.metadata_writers import test_utils
+from tensorflow_lite_support.metadata.tflite_support import metadata as _metadata
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import bert_nl_classifier
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import metadata_info
+from tensorflow_lite_support.metadata.tflite_support.tests.metadata_writers import test_utils
 
 _TEST_DIR = "tensorflow_lite_support/metadata/python/tests/testdata/bert_nl_classifier/"
 _MODEL = "../testdata/bert_nl_classifier/bert_nl_classifier_no_metadata.tflite"

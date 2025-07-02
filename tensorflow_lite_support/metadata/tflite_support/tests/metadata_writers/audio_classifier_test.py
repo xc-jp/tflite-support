@@ -18,9 +18,9 @@ from absl.testing import parameterized
 import tensorflow as tf
 
 from tensorflow_lite_support.metadata import metadata_schema_py_generated as _metadata_fb
-from tensorflow_lite_support.metadata.python.metadata_writers import audio_classifier
-from tensorflow_lite_support.metadata.python.metadata_writers import metadata_info
-from tensorflow_lite_support.metadata.python.tests.metadata_writers import test_utils
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import audio_classifier
+from tensorflow_lite_support.metadata.tflite_support.metadata_writers import metadata_info
+from tensorflow_lite_support.metadata.tflite_support.tests.metadata_writers import test_utils
 
 _FIXED_INPUT_SIZE_MODEL = "../testdata/audio_classifier/yamnet_wavin_quantized_mel_relu6.tflite"
 _DYNAMIC_INPUT_SIZE_MODEL = "../testdata/audio_classifier/yamnet_tfhub.tflite"

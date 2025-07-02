@@ -12,23 +12,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-"""CLI tool for display metadata."""
+"""Tests for tensorflow_lite_support.metadata.metadata_parser."""
 
-from absl import app
-from absl import flags
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
 
-from tensorflow_lite_support.metadata.python import metadata
+import re
+import tensorflow as tf
 
-FLAGS = flags.FLAGS
-flags.DEFINE_string('model_path', None, 'Path to the TFLite model file.')
-flags.DEFINE_string('export_json_path', None, 'Path to the output JSON file.')
+from tensorflow_lite_support.metadata.tflite_support import metadata_parser
 
 
-def main(_):
-  displayer = metadata.MetadataDisplayer.with_model_file(FLAGS.model_path)
-  with open(FLAGS.export_json_path, 'w') as f:
-    f.write(displayer.get_metadata_json())
+class MetadataParserTest(tf.test.TestCase):
+
+  def testVersionWellFormedSemanticVersion(self):
+    # Validates that the version is well-formed (x.y.z).
+    self.assertTrue(
+        re.match('[0-9]+\\.[0-9]+\\.[0-9]+',
+                 metadata_parser.MetadataParser.VERSION))
 
 
 if __name__ == '__main__':
-  app.run(main)
+  tf.test.main()
