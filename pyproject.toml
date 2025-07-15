@@ -9,7 +9,7 @@ packages = [{ include = "tflite_support", from = "tensorflow_lite_support/metada
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
-flatbuffers = ">=2.0,<3"
+flatbuffers = ">=2.0.0"
 
 [tool.nix]
 format = "poetry-core"
